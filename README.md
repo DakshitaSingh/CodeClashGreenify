@@ -1,4 +1,4 @@
-# ♻️ Shop Green - Sustainable Shopping Web App
+# ♻️ Shop Green - Sustainable Shopping Web Application
 
 Shop Green is a web platform that empowers users to make environmentally-conscious shopping decisions by showcasing sustainable products, highlighting their carbon footprint, packaging types, and more. It's your go-to eco-friendly shopping experience.
 
