@@ -11,4 +11,6 @@ Shop Green is a web platform that empowers users to make environmentally-conscio
 - 🧺 **Shopping Cart**: Add eco-friendly products to your basket.
 - 📝 **Admin Dashboard**: Manage products, users, and packaging options.
 - 📊 **Analytics (Planned)**: Insights on user behavior and sustainability scores.
+- 👥 **Group Buying**: Join or create eco-friendly group buys to unlock discounts and reduce carbon footprint collectively.
+
 
