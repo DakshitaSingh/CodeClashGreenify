@@ -1,0 +1,192 @@
+.groupbuy-container {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(135deg, #e0f7ec, #f7fff9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.groupbuy-box {
+  width: 100%;
+  max-width: 850px;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 24px;
+  box-shadow: 0 10px 35px rgba(76, 175, 80, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Heading */
+.groupbuy-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 800;
+  color: #2e7d32;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+
+/* Stats row */
+.groupbuy-stats {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  color: #388e3c;
+}
+
+.avatars {
+  display: flex;
+  gap: 8px;
+}
+
+.avatar {
+  width: 36px;
+  height: 36px;
+  background: linear-gradient(to right, #66bb6a, #43a047);
+  color: #fff;
+  font-size: 13px;
+  font-weight: bold;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #ffffff;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Progress Bar */
+.progress-bar {
+  width: 100%;
+  height: 12px;
+  background-color: #e6f4ea;
+  border-radius: 6px;
+  margin-bottom: 25px;
+  overflow: hidden;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(to right, #43a047, #2e7d32);
+  transition: width 0.5s ease-in-out;
+}
+
+/* Timer */
+.timer {
+  font-size: 15px;
+  text-align: center;
+  color: #2f4f2f;
+  font-weight: 500;
+  margin-bottom: 25px;
+}
+
+/* Buttons */
+.join-button {
+  width: 100%;
+  padding: 14px;
+  background-color: #43a047;
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  font-size: 17px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.join-button:hover {
+  background-color: #2e7d32;
+  transform: translateY(-2px);
+}
+
+.join-button.disabled {
+  background-color: #cfd8dc;
+  color: #666;
+  cursor: not-allowed;
+}
+
+/* Group Details */
+.group-details {
+  margin-top: 35px;
+  border-top: 2px dashed #c5e1a5;
+  padding-top: 25px;
+}
+
+.group-details h3 {
+  font-size: 20px;
+  color: #2e7d32;
+  margin-bottom: 12px;
+}
+
+.group-details ul {
+  list-style: disc;
+  padding-left: 22px;
+  margin-bottom: 25px;
+  color: #333;
+  font-size: 15px;
+}
+
+/* Share & Checkout */
+.action-buttons {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.share-button,
+.checkout-button {
+  flex: 1;
+  padding: 12px 18px;
+  font-size: 15px;
+  font-weight: 600;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.share-button {
+  background-color: #ffca28;
+}
+
+.share-button:hover {
+  background-color: #f9a825;
+  transform: scale(1.05);
+}
+
+.checkout-button {
+  background-color: #1e88e5;
+}
+
+.checkout-button:hover {
+  background-color: #1565c0;
+  transform: scale(1.05);
+}
+
+/* Status messages */
+.loading-text,
+.error-text {
+  text-align: center;
+  margin-top: 60px;
+  font-size: 16px;
+  color: #777;
+}
+
+.error-text {
+  color: #d32f2f;
+  font-weight: bold;
+}
+
+.expired-text {
+  text-align: center;
+  color: #d32f2f;
+  font-weight: 700;
+  margin-top: 25px;
+  font-size: 16px;
+}

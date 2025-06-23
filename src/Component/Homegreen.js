@@ -2,8 +2,7 @@ import React from "react";
 import "../Css/Homegreen.css";
 import Product from "./Productgreen";
 import ImageSliderGreen from "./Imageslidegreen";
-import GroupBuyComponent from "./groupbuy";
-import ActiveGroupDeals from "./ActiveGroupDeals";
+
 import { Link } from "react-router-dom";
 
 function Homegreen() {
