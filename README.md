@@ -122,9 +122,9 @@ It takes the following as input:
 ## 🤝 Contributors
 
 * [Dakshita Singh](https://github.com/DakshitaSingh)
-* [Astha Singh](https://github.com/)
+* [Astha Singh](https://github.com/asthas0108)
 * [Manya Rawat](https://github.com/manya014)
-* [Nancy Singh](https://github.com/)
+* [Nancy Singh](https://github.com/NancySingh2004)
 
 ---
 
