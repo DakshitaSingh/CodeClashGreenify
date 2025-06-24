@@ -12,10 +12,12 @@ function Header() {
 
   return (
     <div className="headerg">
+      {/* Brand */}
       <Link to="/" className="headerg__brand">
         <span className="headerg__textLogo">Greenify</span>
       </Link>
 
+      {/* Search Bar */}
       <div className="headerg__search">
         <input
           className="headerg__searchInput"
@@ -29,6 +31,7 @@ function Header() {
         />
       </div>
 
+      {/* Nav Options */}
       <div className="headerg__nav">
         <Link to="/login" className="headerg__link">
           <div className="headerg__option">

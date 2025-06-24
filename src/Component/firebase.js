@@ -1,9 +1,15 @@
+import { initializeApp } from "firebase/app";
+import { getAuth } from "firebase/auth";
+
 const firebaseConfig = {
-  apiKey: "AIzaSyAmN1S49Y72t8Y3Riw4DBj0T9x30CP7PfM",
-  authDomain: "hackon-5a5cb.firebaseapp.com",
-  projectId: "hackon-5a5cb",
-  storageBucket: "hackon-5a5cb.firebasestorage.app",
-  messagingSenderId: "844440537276",
-  appId: "1:844440537276:web:2f3d78d279f9c08302e8b9",
-  measurementId: "G-XSBSX6Z7JH"
+  apiKey: "AIzaSyCMCYrPfbZaCMMlzgKHSjDSUigL0P1OeyQ",
+  authDomain: "codeclash-8824c.firebaseapp.com",
+  projectId: "codeclash-8824c",
+  storageBucket: "codeclash-8824c.firebasestorage.app",
+  messagingSenderId: "853462668312",
+  appId: "1:853462668312:web:dc33594c5d4a6c88c75f6d",
+  measurementId: "G-81TEG0F1TT"
 };
+
+const app = initializeApp(firebaseConfig);
+export const auth = getAuth(app);

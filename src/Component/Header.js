@@ -32,77 +32,67 @@ function Header() {
     };
 
     window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
     <div className="header">
+      {/* Brand Name */}
       <Link to="/" className="header__textLogo">
-        Greenify
+        <span style={{ color: "#2e7d32", fontWeight: "bold", fontSize: "28px" }}>
+          Greenify
+        </span>
       </Link>
 
-      <div className="header__search">
-        <input
-          className="header__searchInput"
-          type="text"
-          placeholder="Search eco-products..."
-        />
-        <img
-          src="../images/search_icon.png"
-          className="header__searchIcon"
-          alt="Search"
-        />
-      </div>
+     {/* Search Input with Icon */}
+<div className="header__search">
+  <input
+    className="header__searchInput"
+    type="text"
+    placeholder="Search eco-products..."
+  />
+  <span className="header__searchIcon">🔍</span>
+</div>
 
+
+      {/* Nav Links */}
       <div className="header__nav">
-        <Link style={{ textDecoration: "none" }} to="/login">
+        <Link to="/login" className="header__optionLink">
           <div className="header__option">
             <span className="header__optionLineOne">Hello, Green Soul</span>
             <span className="header__optionLineTwo">Sign In</span>
           </div>
         </Link>
 
-        <Link style={{ textDecoration: "none" }} to="/orders">
+        <Link to="/orders" className="header__optionLink">
           <div className="header__option">
             <span className="header__optionLineOne">Your</span>
             <span className="header__optionLineTwo">Orders</span>
           </div>
         </Link>
 
-        <Link style={{ textDecoration: "none" }} to="/dashboard">
+        <Link to="/dashboard" className="header__optionLink">
           <div className="header__option">
             <span className="header__optionLineOne">Eco</span>
             <span className="header__optionLineTwo">Dashboard</span>
           </div>
         </Link>
 
-        <Link
-          style={{ textDecoration: "none" }}
-          to="/checkout"
-          onClick={handleLinkClick}
-        >
+        {/* Cart (text-only, modern style) */}
+        <Link to="/checkout" onClick={handleLinkClick} className="header__optionLink">
           <div className="header__optionBasket">
-            <img
-              src="../images/leaf_cart.png"
-              className="header__cartIcon"
-              alt="Cart"
-            />
-            <span className="header__optionLineTwo header__basketCount">
-              {basket?.length}
-            </span>
+            <span className="header__optionLineTwo">Cart ({basket?.length || 0})</span>
           </div>
         </Link>
 
-        {/* Greenovation Button on Extreme Right */}
+        {/* Greenovation Zone Button */}
         <div className="greenify-navbar__button-wrapper">
           <Link to="/green">
             <button id="itemToTrack" className="greenify-navbar__button">
               Greenovation Zone
             </button>
           </Link>
+
           {showPopover && !dontShowAgain && (
             <div className="greenify-navbar__popover">
               <div className="greenify-navbar__popover-arrow" />
